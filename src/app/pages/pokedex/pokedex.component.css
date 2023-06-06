@@ -1,4 +1,18 @@
 .pokedex{
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.pokedex .toolsbar-container{
+  width: 100%;
+}
+
+.pokedex-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
 }

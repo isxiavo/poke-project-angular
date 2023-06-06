@@ -1,9 +1,9 @@
 .list-simple{
   display: flex;
-  justify-content:space-evenly;
+  justify-content:center;
   flex-wrap: wrap;
   width: 60dvw;
-  height: 85dvh;
+  height: 90dvh;
   padding: 1em;
   gap: 1em;
   border-radius: 1rem;

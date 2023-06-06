@@ -4,8 +4,29 @@
   border: 0;
   box-sizing: border-box;
   font-size: 16px;
-  color: rgb(248, 246, 231);
 }
 body{
   background-color: #3a3a3a;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: .5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

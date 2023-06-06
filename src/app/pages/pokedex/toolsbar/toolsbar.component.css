@@ -1,0 +1,44 @@
+.toolsbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 5dvh;
+  border-radius: 1em;
+  background-color: rgb(100,106,110);
+  color: black;
+}
+.toolsbar > .search-field {
+  width: 30dvw;
+  height: 70%;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.toolsbar > .search-field > input {
+  width: 90%;
+  height: 100%;
+}
+.toolsbar > .search-field > button {
+  width: 10%;
+  height: 100%;
+}
+
+.toolsbar > .buttons-container{
+  display: flex;
+  justify-content: center;
+  gap: .1em;
+  min-width: 8em;
+  width: 12dvw;
+  height: 70%;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.buttons-container > .state-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  width: 100%;
+  height: 100%;
+}
