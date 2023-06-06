@@ -1,0 +1,17 @@
+<div class="poke-simple" [style]="style">
+  <div class="poke-simple-top">
+    <span class="poke-name">{{pokemon!.name}}</span>
+    <span class="poke-id">#{{pokemon!.id}}</span>
+  </div>
+  <div class="poke-simple-bottom">
+    <div class="types-container">
+      <app-type-tag 
+        *ngFor="let type of pokemon!.types"
+        [name]="type.type.name"
+      />
+    </div>
+    <div class="thumbnail">
+      <img class="pic" src={{pokemon!.sprites.official_artwork}} alt="thumb" />
+    </div>
+  </div>
+</div>

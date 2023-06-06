@@ -1,0 +1,67 @@
+.filterbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 15em;
+  height: 85dvh;
+  padding: 1em;
+  border-radius: 1em;
+  background-color:rgb(100, 106, 110);
+}
+.filterbar .types-filterbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filterbar .types-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .3em;
+}
+.filterbar .stats-filterbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.filterbar .stats-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: .3em;
+  width: 100%;
+}
+.filterbar .stat-input{
+  width: 3em;
+}
+.filterbar .stat{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.filterbar .abilities-container{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  height: 8em;
+  border: 1px solid pink;
+}
+.filterbar .moves-container{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  height: 8em;
+  border: 1px solid pink;
+}
+
+.filterbar h2{
+  margin: .5em;
+}
+
+.filterbar  hr {
+  width: 90%;
+  margin: 1em;
+}

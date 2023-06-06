@@ -1,0 +1,42 @@
+.poke-simple{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 12em;
+  max-width: 15em;
+  min-height: 8em;
+  border-radius: 1em;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 0px 0.1em 0.3em 0.1px black;
+}
+.poke-simple-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: .7em;
+  width: 80%;
+}
+.poke-simple-bottom{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  width: 90%;
+
+}
+.types-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 1em;
+  gap: .5em;
+}
+.poke-simple-bottom > .thumbnail{
+  width: 5em;
+}
+.poke-simple-bottom .pic{
+  max-width: 100%;
+}

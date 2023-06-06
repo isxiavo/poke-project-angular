@@ -1,0 +1,12 @@
+.list-simple{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  width: 60dvw;
+  height: 85dvh;
+  padding: 1em;
+  gap: 1em;
+  border-radius: 1rem;
+  overflow-x: hidden;
+  background-color:rgb(100, 106, 110);
+}
