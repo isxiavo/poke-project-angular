@@ -1,4 +1,4 @@
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import data from '../../data/pokemonsData.json';
 
 @Component({
@@ -6,14 +6,14 @@ import data from '../../data/pokemonsData.json';
   templateUrl: './type-tag.component.html',
   styleUrls: ['./type-tag.component.css']
 })
-export class TypeTagComponent implements AfterViewInit {
+export class TypeTagComponent implements OnInit {
 
   @Input() name: string = '';
   style = {}
 
   constructor() {}
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     this.style = {'backgroundColor': data.colors[this.name as keyof typeof data.colors]}
   }
 }

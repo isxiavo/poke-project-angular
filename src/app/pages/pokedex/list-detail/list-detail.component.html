@@ -1,1 +1,6 @@
-<p>list-detail works!</p>
+<div class="list-detail">
+  <app-poke-simple *ngFor="let p of pokemonsCurrent"
+    [pokemon]="p"
+  />
+  <button class="load-button" (click)="loadMore()">▼</button>
+</div>

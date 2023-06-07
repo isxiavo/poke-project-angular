@@ -1,4 +1,4 @@
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PokemonType } from 'src/app/model/PokemonType';
 import data from '../../../../data/pokemonsData.json'
 
@@ -7,7 +7,7 @@ import data from '../../../../data/pokemonsData.json'
   templateUrl: './poke-simple.component.html',
   styleUrls: ['./poke-simple.component.css']
 })
-export class PokeSimpleComponent implements AfterViewInit {
+export class PokeSimpleComponent implements OnInit {
 
   @Input() pokemon: PokemonType | undefined;
   style = {};
@@ -15,7 +15,8 @@ export class PokeSimpleComponent implements AfterViewInit {
   constructor() {
     this.pokemon = undefined
   }
-  ngAfterViewInit(): void {
+  
+  ngOnInit(): void {
     this.style = {
       'backgroundColor' : 
         data.lightColors[this.pokemon!.types[0].type.name as keyof typeof data.lightColors]

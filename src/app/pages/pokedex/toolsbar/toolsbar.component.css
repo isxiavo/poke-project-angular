@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   height: 5dvh;
   border-radius: 1em;
@@ -12,6 +12,7 @@
 .toolsbar > .search-field {
   width: 30dvw;
   height: 70%;
+  margin-left: 1em;
   border-radius: 1em;
   overflow: hidden;
 }
@@ -28,6 +29,7 @@
   display: flex;
   justify-content: center;
   gap: .1em;
+  margin-right: 1em;
   min-width: 8em;
   width: 12dvw;
   height: 70%;

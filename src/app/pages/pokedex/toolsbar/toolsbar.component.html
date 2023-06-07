@@ -4,11 +4,11 @@
     <button>◙</button>
   </div>
   <div class="buttons-container">
-    <button class="state-button">
+    <button class="state-button" (click)="changeListType('list-simple')">
       <span>♣</span>
       <span>Card</span>
     </button>
-    <button class="state-button">
+    <button class="state-button" (click)="changeListType('list-detail')">
       <span>═</span>
       <span>List</span>
     </button>

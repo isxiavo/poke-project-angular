@@ -1,9 +1,16 @@
 <div class="pokedex">
   <div class="toolsbar-container">
-    <app-toolsbar/>
+    <app-toolsbar (listTypeChange)="changeListType($event)"/>
   </div>
-  <div class="pokedex-content">
-    <app-list-simple [pokemons]="pokemons"></app-list-simple>
+  <div class="pokedex-content" [ngSwitch]="currentListType">
+    <app-list-simple 
+      *ngSwitchCase="'list-simple'"
+      [pokemonsTotal]="pokemons"
+    />
+    <app-list-detail 
+      *ngSwitchCase="'list-detail'"
+      [pokemonsTotal]="pokemons"
+    />
     <app-filterbar />
   </div>
 </div>

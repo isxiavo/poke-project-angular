@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { PokemonType } from 'src/app/model/PokemonType';
 import { SpeciesType } from 'src/app/model/SpeciesType';
 import { FetchPokemonsService } from 'src/app/services/fetch-pokemons.service';
@@ -8,20 +8,17 @@ import { FetchPokemonsService } from 'src/app/services/fetch-pokemons.service';
   templateUrl: './pokedex.component.html',
   styleUrls: ['./pokedex.component.css']
 })
-export class PokedexComponent implements AfterViewInit {
+export class PokedexComponent {
   
-  pokemons: PokemonType[] = [];
+  pokemons: PokemonType[];
+  currentListType: string;
 
-  getPokemons(limit: number, offset: number) {
-    this.pokemons =  this.service.getPokemons(limit, offset)
-    
+  changeListType($event:string) {
+    this.currentListType = $event;
   }
 
-  
   constructor(private service: FetchPokemonsService) {
-    this.getPokemons(50,0)
-  }
-  ngAfterViewInit(): void {
-    console.log(this.pokemons)
+    this.pokemons = this.service.getPokemons(50, 0)
+    this.currentListType = 'list-simple'
   }
 }
