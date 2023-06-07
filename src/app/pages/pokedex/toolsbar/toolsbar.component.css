@@ -3,16 +3,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
   width: 100%;
   height: 5dvh;
   border-radius: 1em;
   background-color: rgb(100,106,110);
   color: black;
 }
+
 .toolsbar > .search-field {
-  width: 30dvw;
+  width: 40dvw;
   height: 70%;
-  margin-left: 1em;
   border-radius: 1em;
   overflow: hidden;
 }
@@ -25,18 +27,40 @@
   height: 100%;
 }
 
-.toolsbar > .buttons-container{
+.toolsbar .sorting-button{
+
+  width: 4em;
+  height: 70%;
+  border-radius: 1em;
+}
+.toolsbar .sorting-options{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: white;
+  margin-top: 1em;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.toolsbar .sorting-op{
+  cursor: pointer;
+  padding: 1em;
+}
+.toolsbar .sorting-op:hover{
+  background-color: lightgray;
+}
+
+.toolsbar > .list-buttons{
   display: flex;
   justify-content: center;
   gap: .1em;
-  margin-right: 1em;
   min-width: 8em;
   width: 12dvw;
   height: 70%;
   border-radius: 1em;
   overflow: hidden;
 }
-.buttons-container > .state-button{
+.list-buttons > .state-button{
   display: flex;
   align-items: center;
   justify-content: center;

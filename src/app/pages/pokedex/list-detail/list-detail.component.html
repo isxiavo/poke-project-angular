@@ -1,6 +1,4 @@
 <div class="list-detail">
-  <app-poke-simple *ngFor="let p of pokemonsCurrent"
-    [pokemon]="p"
-  />
+  <app-poke-detail *ngFor="let p of pokemonsTotal" [pokemon]="p" />
   <button class="load-button" (click)="loadMore()">▼</button>
 </div>

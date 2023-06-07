@@ -9,14 +9,20 @@ import { Component, Output, EventEmitter } from '@angular/core';
 
 export class ToolsbarComponent {
 
-  @Output() listTypeChange = new EventEmitter<string>();
+  @Output() listTypeChange;
+  sortingOpen: boolean;
 
   changeListType(listType: string) {
     this.listTypeChange.emit(listType)
     console.log(listType)
   }
 
+  sortingOpenClose () {
+    this.sortingOpen = !this.sortingOpen
+  }
+
   constructor() {
-    
+    this.listTypeChange = new EventEmitter<string>();
+    this.sortingOpen = false;
   }
 }

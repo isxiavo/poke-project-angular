@@ -37,7 +37,7 @@
 
 .menu .op-icon{
   display: flex;
-  width: 10%;
+  width: 1.3em;
   margin-right: .5em;
 }
 .menu .op-icon > img{

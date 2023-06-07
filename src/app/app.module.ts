@@ -12,6 +12,7 @@ import { TypeTagComponent } from './components/type-tag/type-tag.component';
 import { FilterbarComponent } from './pages/pokedex/filterbar/filterbar.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { ToolsbarComponent } from './pages/pokedex/toolsbar/toolsbar.component';
+import { PokeDetailComponent } from './pages/pokedex/list-detail/poke-detail/poke-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ToolsbarComponent } from './pages/pokedex/toolsbar/toolsbar.component';
     TypeTagComponent,
     FilterbarComponent,
     MenuComponent,
-    ToolsbarComponent
+    ToolsbarComponent,
+    PokeDetailComponent
   ],
   imports: [
     BrowserModule,

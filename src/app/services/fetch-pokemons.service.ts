@@ -32,6 +32,14 @@ export class FetchPokemonsService {
                     official_artwork: poke.sprites.other['official-artwork'].front_default
                   },
                   types: poke.types,
+                  stats: {
+                    hp: poke.stats[0].base_stat,
+                    atk: poke.stats[1].base_stat,
+                    def: poke.stats[2].base_stat,
+                    satk: poke.stats[3].base_stat,
+                    sdef: poke.stats[4].base_stat,
+                    spd: poke.stats[5].base_stat,
+                  },
                   abilities: poke.abilities,
                   moves: poke.moves
                 }
