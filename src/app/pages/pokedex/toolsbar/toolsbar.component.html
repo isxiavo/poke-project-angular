@@ -1,5 +1,8 @@
 <div class="toolsbar">
-  <button class="sorting-button" (click)="sortingOpenClose()">══
+  <button class="sorting-button" 
+    (click)="sortingOpenClose()"
+    clickOutside (clickOutside)="clickedOutside()"
+  >══
     <div class="sorting-options" *ngIf="sortingOpen">
       <span class="sorting-op">#NUMBER</span>
       <span class="sorting-op">NAME</span>

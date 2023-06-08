@@ -6,6 +6,39 @@
   padding: 1em;
   border-radius: 1em;
   background-color:rgb(100, 106, 110);
+}
+
+.list-detail .column-headers{
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+  height: 2em;
+  border-radius: 1em;
+  background-color: #5c5d64;
+  color: rgb(168, 168, 168);
+}
+.list-detail .column-headers > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-detail .thumb-header {
+  width: 2em;
+}
+.list-detail .id-header {
+  width: 3.5em;
+}
+.list-detail .name-header {
+  width: 20em;
+}
+.list-detail .type-header {
+  width: 3em;
+}
+.list-detail .stat-header {
+  width: 3em;
+}
+
+.details-container{
   overflow-x: hidden;
 }
 

@@ -13,6 +13,7 @@ import { FilterbarComponent } from './pages/pokedex/filterbar/filterbar.componen
 import { MenuComponent } from './shared/menu/menu.component';
 import { ToolsbarComponent } from './pages/pokedex/toolsbar/toolsbar.component';
 import { PokeDetailComponent } from './pages/pokedex/list-detail/poke-detail/poke-detail.component';
+import { ClickOutsideDirective } from './module/clickoutise.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PokeDetailComponent } from './pages/pokedex/list-detail/poke-detail/pok
     FilterbarComponent,
     MenuComponent,
     ToolsbarComponent,
-    PokeDetailComponent
+    PokeDetailComponent,
+    ClickOutsideDirective
   ],
   imports: [
     BrowserModule,

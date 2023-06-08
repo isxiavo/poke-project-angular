@@ -1,4 +1,18 @@
 <div class="list-detail">
-  <app-poke-detail *ngFor="let p of pokemonsTotal" [pokemon]="p" />
+  <div class="column-headers">
+    <div class="thumb-header"></div>
+    <div class="id-header">#</div>
+    <div class="name-header">name</div>
+    <div class="type-header">type</div>
+    <div class="stat-header">hp</div>
+    <div class="stat-header">atk</div>
+    <div class="stat-header">def</div>
+    <div class="stat-header">satk</div>
+    <div class="stat-header">sdef</div>
+    <div class="stat-header">spd</div>
+  </div>
+  <div class="details-container">
+    <app-poke-detail *ngFor="let p of pokemonsTotal" [pokemon]="p" />
+  </div>
   <button class="load-button" (click)="loadMore()">▼</button>
 </div>

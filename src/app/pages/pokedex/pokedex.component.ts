@@ -19,6 +19,6 @@ export class PokedexComponent {
 
   constructor(private service: FetchPokemonsService) {
     this.pokemons = this.service.getPokemons(50, 0)
-    this.currentListType = 'list-simple'
+    this.currentListType = 'list-detail'
   }
 }

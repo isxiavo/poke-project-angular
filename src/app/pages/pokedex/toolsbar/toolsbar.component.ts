@@ -12,13 +12,17 @@ export class ToolsbarComponent {
   @Output() listTypeChange;
   sortingOpen: boolean;
 
-  changeListType(listType: string) {
+  changeListType(listType: string): void {
     this.listTypeChange.emit(listType)
     console.log(listType)
   }
 
-  sortingOpenClose () {
+  sortingOpenClose(): void {
     this.sortingOpen = !this.sortingOpen
+  }
+
+  clickedOutside(): void {
+    this.sortingOpen = false;
   }
 
   constructor() {
