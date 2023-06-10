@@ -4,13 +4,15 @@
   </div>
   <div class="pokedex-content" [ngSwitch]="currentListType">
     <app-list-simple 
+      class="app-list-simple"
       *ngSwitchCase="'list-simple'"
       [pokemonsTotal]="pokemons"
     />
     <app-list-detail 
+      class="app-list-detail"
       *ngSwitchCase="'list-detail'"
       [pokemonsTotal]="pokemons"
     />
-    <app-filterbar />
+    <app-filterbar class="app-filterbar"/>
   </div>
 </div>

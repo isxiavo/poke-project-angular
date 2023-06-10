@@ -17,8 +17,8 @@ export class ToolsbarComponent {
     console.log(listType)
   }
 
-  sortingOpenClose(): void {
-    this.sortingOpen = !this.sortingOpen
+  toggleSortMenu(): void {
+    this.sortingOpen = !this.sortingOpen;
   }
 
   clickedOutside(): void {

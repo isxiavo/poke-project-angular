@@ -13,6 +13,7 @@
 
 .menu .nsei{
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 100%;
 }
@@ -34,7 +35,6 @@
 .menu .op:hover{
   background-color: antiquewhite;
 }
-
 .menu .op-icon{
   display: flex;
   width: 1.3em;
@@ -46,26 +46,118 @@
 
 .menu .user-container{
   display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.menu .user-info{
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .menu .user-thumbnail{
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
   overflow: hidden;
-  width: 5em;
+  width: 50%;
   margin-bottom: 1rem;
 }
 
 .user-thumbnail > img{
   width: 100%;
 }
-
-.menu .user-info{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.nsei > hr{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  height: 1px;
+  border-radius: 100%;
+  background-color: antiquewhite;
 }
+
+.menu .menu-bg {
+  display: none;
+}
+
+@media screen and (max-width:1200px) {
+  .menu{
+    position: fixed;
+    left:0;
+    width: 17em;
+    height: 100dvh;
+    border-radius: 0;
+    z-index: 1;
+  }
+  .menu .menu-bg{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(0,0,0,.5);
+  }
+}
+
+/* @media screen and (max-width: 1200px) {
+  .menu{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100dvw;
+    height: 5dvh;
+    border-radius: 0;
+    background-color:rgb(100, 106, 110);
+  }
+  .menu .nsei{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .nsei > hr{
+    display: none;
+  }
+
+  .menu .pages-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    width: auto;
+  }
+
+  .menu .op{
+    display: flex;
+    align-items: center;
+    padding: .3em;
+    width: 10em;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .menu .user-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu .user-thumbnail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 2em;
+    margin-bottom: 0;
+  }
+  .menu .user-info{
+    display: none;
+  }
+} */

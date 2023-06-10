@@ -1,8 +1,14 @@
 <div class="toolsbar">
-  <button class="sorting-button" 
-    (click)="sortingOpenClose()"
-    clickOutside (clickOutside)="clickedOutside()"
-  >══
+  
+  <div class="search-field">
+    <input type="text"/>
+    <button>◙</button>
+  </div>
+
+  <div class="sort-menu" clickOutside (clickOutside)="clickedOutside()">
+
+    <button class="sorting-button" (click)="toggleSortMenu()">══</button>
+
     <div class="sorting-options" *ngIf="sortingOpen">
       <span class="sorting-op">#NUMBER</span>
       <span class="sorting-op">NAME</span>
@@ -13,11 +19,9 @@
       <span class="sorting-op">♢ SDEF</span>
       <span class="sorting-op">➲ SPD</span>
     </div>
-  </button>
-  <div class="search-field">
-    <input type="text"/>
-    <button>◙</button>
+
   </div>
+
   <div class="list-buttons">
     <button class="state-button" (click)="changeListType('list-simple')">
       <span>♣</span>
@@ -28,4 +32,5 @@
       <span>List</span>
     </button>
   </div>
+
 </div>

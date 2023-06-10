@@ -1,18 +1,28 @@
-.pokedex{
+.pokedex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 95dvh;
 }
 
-.pokedex .toolsbar-container{
-  width: 100%;
-}
-
-.pokedex-content{
+.pokedex-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 1em;
+  width: 100%;
+}
+
+.app-list-detail{
+  width: 79%;
+}
+
+
+.app-filterbar{
+  width: 20%;
+  height: 100%;
+}
+
+.pokedex .toolsbar-container {
+  width: 100%;
 }

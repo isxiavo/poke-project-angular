@@ -12,9 +12,10 @@ export class ClickOutsideDirective implements AfterViewInit, OnDestroy {
   documentClickSubscription: Subscription | undefined;
 
   isInside(elementToCheck: HTMLElement): boolean {
-    return elementToCheck === this.element.nativeElement
-    ||
-    this.element.nativeElement.contains(elementToCheck);
+    return (elementToCheck === this.element.nativeElement
+      ||
+      this.element.nativeElement.contains(elementToCheck)
+    )
   }
 
   constructor(private element: ElementRef, @Inject(DOCUMENT) private document: Document) {
